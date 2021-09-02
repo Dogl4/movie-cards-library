@@ -29,7 +29,7 @@ const movies = [
 describe('6 - Crie um componente `<MovieCard />`', () => {
   const movie = movies[0];
 
-  it.skit('Renderize o componente `<MovieCard />`', () => {
+  it('Renderize o componente `<MovieCard />`', () => {
     shallow(<MovieCard movie={ movie } />);
   });
 });
