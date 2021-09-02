@@ -5,12 +5,13 @@ import MovieCard from './MovieCard';
 class MovieList extends Component {
   render() {
     const { movies } = this.props;
+    console.log(this.props, 'Xablau');
     return (
-      <main>
-        {movies.map((currentValue, index) => (
-          <MovieCard key={ index } movie={ currentValue } />
+      <>
+        {movies.map((mov) => (
+          <MovieCard key={ mov.title } movies={ mov } />
         ))}
-      </main>
+      </>
     );
   }
 }
