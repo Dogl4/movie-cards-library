@@ -14,7 +14,9 @@ class MovieCard extends Component {
           <p className="movie-card-storyline">{movie.storyline}</p>
           <img className="movie-card-image" src={ movie.imagePath } alt={ movie.title } />
         </div>
-        <Rating rating={ movie.rating } />
+        <div className="rigth">
+          <Rating rating={ movie.rating } />
+        </div>
       </div>
     );
   }
